@@ -50,6 +50,26 @@ a {
   a {
     color: #fff;
   }
+
+  &-content { // the & means the same name as the parent, here "showcase". Our div having the class "showcase-content" we can use it here
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 50%;
+    }
+
+    h1 {
+      font-size: 50px;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 20px 0;
+    }
+  }
 }
 
 .container {
