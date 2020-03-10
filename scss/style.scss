@@ -23,8 +23,9 @@ a {
 }
 
 .showcase {
-  background-color: $primary-color;
-  color: set-text-color($primary-color);
+  // background-color: $primary-color;
+  // color: set-text-color($primary-color);
+  @include set-background($primary-color); // That mixin replaces the 2 lines above
   height: 600px;
 
   nav {

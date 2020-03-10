@@ -1,7 +1,10 @@
 $light-color: #f4f4f4;
 $font-stack: Arial, Helvetica, sans-serif;
-// $primary-color: #0e6cff;
-$primary-color: #e0ffff;
+
+// Switch which color apply to the background to see the color of the text changing thanks to the set-text-color function below
+$primary-color: #0e6cff;
+// $primary-color: #e0ffff;
+
 $secondary-color: #ff8700;
 
 // Set text color based on background
@@ -11,4 +14,10 @@ $secondary-color: #ff8700;
   } @else {
     @return #fff;
   }
+}
+
+// Set background & text color
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
 }
